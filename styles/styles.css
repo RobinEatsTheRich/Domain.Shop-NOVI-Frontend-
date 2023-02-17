@@ -22,16 +22,37 @@ Table of Contents:
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 h1{
-    font-size: 80px;
+    margin-top: 80px;
+    font-size: 100px;
+    color: #1C2B32;
+}
+h2{
+    text-align: center;
+    margin-bottom: 50px;
     color: #1C2B32;
 }
 p{
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: lighter;
     color: #1C2B32;
+}
+a{
+    font-weight: normal;
+    color: #899CA0;
+}
+a:hover{
+    text-decoration: none;
 }
 
 /*////////////////////////
@@ -41,18 +62,26 @@ p{
 
 /*///////////// 3.1 Header /////////////*/
 header{
-    margin-top: 80px;
+    height: 800px;
+    width: 100%;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    background-image: url("../../frontend-html-css-domeinshop-master/assets/images/mountains.jpg");
+    background-size: 100%;
+    background-clip: content-box;
+}
+header p{
+    font-size: 13px;
 }
 .search-form{
-    height: 50px;
-    width: 450px;
+    height: 60px;
+    width: 500px;
     margin: 30px;
     border: 2px #1C2B32 solid;
-    border-radius: 25px;
+    border-radius: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,30 +90,114 @@ header{
     border: 0;
     margin-left: 15px;
     background: none;
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: normal;
 }
 .search-form button{
     border: 0;
     height: 100%;
-    width: 160px;
+    width: 200px;
     border-radius: 0 25px 25px 0;
     background-color: #1C2B32;
-    font-size: 12px;
+    font-size: 13px;
     color: white;
 }
 .search-form button:hover{color:#899CA0}
 .search-form button:active{background-color: #5e919dFF; color:#899CA0}
 
-/*///////////// 3.2 Testimonial /////////////*/
 
+
+/*///////////// 3.2 Testimonial /////////////*/
+.testimonials{
+    width: 60%;
+    min-width: 400px;
+}
+.testimonial-frame{
+    margin-bottom: 40px;
+    padding: 50px 70px 50px 70px;
+    box-shadow: 0 8px 24px rgba(0.50, 0.20, 0.50, 0.20);
+    border-radius: 12px;
+}
+.testimonials-text{
+    display: flex;
+}
+.testimonials-text img{
+    width: 22px;
+    height: 22px;
+    margin: 0 20px 0 20px;
+}
+.testimonials-user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 20px;
+}
+.testimonials-user img{
+    width: 40px;
+    height: 40px;
+    margin: 0 20px 0 20px;
+}
+.testimonials-user p{
+    font-style: italic;
+}
 
 
 /*///////////// 3.3 Support /////////////*/
-
-
+.support{
+    width: 60%;
+    min-width: 400px;
+}
+.support img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.support button{
+    border: none;
+    padding: 20px 20px 40px 20px;
+    margin: 20px 0 50px 0;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #1C2B32;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 13px;
+    color: white;
+}
 
 /*///////////// 3.4 Faq /////////////*/
-
+.faq{
+    width: 60%;
+    min-width: 400px;
+    margin-bottom: 20px;
+}
+details{
+    margin-bottom: 30px;
+}
+summary{
+    font-size: 12px;
+    font-weight: lighter;
+    color: #1C2B32;
+}
+details p{
+    width: 70%;
+    padding: 20px 25px 20px 25px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #899CA0;
+    color: white;
+}
 
 
 /*///////////// 3.5 Footer /////////////*/
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: #1C2B32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 12px;
+    color: white;
+}
