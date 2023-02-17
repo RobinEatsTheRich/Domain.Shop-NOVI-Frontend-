@@ -9,13 +9,14 @@ Table of Contents:
         3.4 Faq
         3.5 Footer
 ////////////////////////////////////////////////////////////////////////*/
-/* green = #1C2B32 */
-/* grey = #899CA0 */
 
 
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+/* green = #1C2B32 */
+
+/* grey = #899CA0 */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -163,6 +164,9 @@ header p{
     font-size: 13px;
     color: white;
 }
+.support button:hover{color:#899CA0}
+.support button:active{background-color: #5e919dFF; color:#899CA0}
+
 
 /*///////////// 3.4 Faq /////////////*/
 .faq{
